@@ -71,7 +71,7 @@ template <class T>
         //and we are out of bounds
         if (i < low || i > high)
         {
-            cout << "index " << i << "  bounds out of range" << endl;
+            cout << "index " << i << " out of range" << endl;
             exit(1);
         }
         return p[i - low];

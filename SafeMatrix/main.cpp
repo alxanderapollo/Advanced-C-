@@ -32,7 +32,6 @@ void multiplyMatrices(safeMatrix<int> mat1, safeMatrix<int> mat2){
             //  cout<<"first col: "<<FirstCol<<endl;
             //  cout<<"second Row: "<<secondRow<<endl;
 
-             
              //check
               if(checkMe){
                   cout << "the col of the first matrix must equal the 2nd matrix! Try again";
@@ -133,8 +132,6 @@ int main(){
     //multiply the above matrices
     multiplyMatrices(matrixTest, matrixTest_2);
 
-
-
     //2nd example two 3X3 Matrices
     
     //Four Paramter construcor test
@@ -152,9 +149,12 @@ int main(){
     myNewMatrix.printMe();
     cout << "\nSecond Matrix"<<endl;
     myNewMatrix2.printMe();
+
     //multiply the matrices
     multiplyMatrices(myNewMatrix, myNewMatrix2);
-   
 
+    //matrixTest
+     multiplyMatrices(matrixTest, myNewMatrix2);
+   
     return 0;
 }

@@ -16,7 +16,7 @@ template <class T>
             //row =  upperbound - lowerBound
             //col = upperBound2 - lowerBound2
 
-            safeArray<safeArray <T> > *myMatrix; //safe array of safe arrays
+            safeArray<safeArray <T> > *myMatrix;
            public:
 
            //2 param constructor user doesn't need to specify low
@@ -46,6 +46,5 @@ template <class T>
             //safeMatrix<T>& operator*(safeMatrix& obj); //overloaded multiplication
             safeArray<T>& operator[](int i); //over load the brackets
             void printMe();//print function so i dont have to use the overload the ostream explicitly.
-            friend ostream& operator<<(ostream& os, const safeMatrix<T> s);     
     };//end safeMatrix 
 #endif 
